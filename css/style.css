@@ -1,0 +1,54 @@
+@import url('config.css');
+
+body {
+  background: #0f0f14;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 32px 16px;
+}
+
+header h1 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+header p {
+  margin-top: 6px;
+  font-size: clamp(0.9rem, 2.5vw, 1.05rem);
+  opacity: 0.8;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #1b1b25;
+  padding: 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s, background 0.2s;
+  width: 260px;
+  min-height: 120px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-4px);
+    background: #26263a;
+  }
+}

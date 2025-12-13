@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="X-UA-Compatible" content="ie=7">
+    <meta name="description"
+        content="Projeto que mostra o menu de navegação com animação que é deixado no cabeçalho de site">
+    <meta name="author" content="Brian Vigo de Oliveira">
+    <meta name="robots" content="index, index">
+    <meta name="keywords" content="Menu de navegação, cabeçalho">
+    <title>Menu de Navegação</title>
+    <link rel="stylesheet" href="/css/config.css">
+
+
+    <style>
+        /* Variaveis */
+        :root {
+            --cor-principal: #2192ff;
+        }
+
+        /* Conteudo principal */
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: var(--cor-principal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container nav {
+            background-color: #fff;
+            border-radius: 9px;
+            padding: 30px;
+            box-shadow: 0 5px 20px #000000;
+        }
+
+        .container nav ul li {
+            display: inline-block;
+            list-style: none;
+            font-size: 2rem;
+            padding: 0 10px;
+            margin: 0 20px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .container nav ul li::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background-color: var(--cor-principal);
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 1s;
+        }
+
+        .container nav ul li:hover::after {
+            width: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Deixei a classe na tag header já que usamos esses menus de navegações no estilo horizontal nesta tag -->
+    <header class="container">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Sobre Nós</li>
+                <li>Serviços</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Projeto de página unica com ">
+    <meta name="author" content="Brian Vigo de Oliveira">
+    <meta name="robots" content="index, index">
+    <meta name="keywords" content="Upload, Upload icon ">
+    <title>Upload Icon</title>
+    <link rel="stylesheet" href="/css/config.css">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 100px;
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #dfdfdf;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="/img/icon.png" alt="">
+    <input type="file" accept="image/*">
+</body>
+<script>
+    let image = document.querySelector("img"),
+        input = document.querySelector("input");
+
+    input.addEventListener("change", () => {
+        if (input.files && input.files[0]) {
+            image.src = URL.createObjectURL(input.files[0]);
+        }
+    });
+</script>
+
+</html>

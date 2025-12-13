@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="X-UA-Compatible" content="ie=7">
+    <meta name="description" content="Projeto de página unica com uma SideBar">
+    <meta name="author" content="Brian Vigo de Oliveira">
+    <meta name="robots" content="index, index">
+    <meta name="keywords" content="SideBar, menu">
+    <title>SideBar</title>
+    <link rel="stylesheet" href="/css/config.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
+
+    <style>
+        :root {
+            --cor-preto: #000;
+            --cor-cinza: #d1d1d1bd;
+            --cor-branco: #fff;
+            --background: #161a2d;
+            --cor-cinzaTransp: #ffffff2d;
+            --cor-azul: #333578;
+        }
+
+        body {
+            background-color: var(--cor-cinza);
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            height: 100%;
+            width: 85px;
+            padding: 25px 20px;
+            background-color: var(--background);
+            transition: all 0.7s ease;
+        }
+
+        .sidebar:hover {
+            width: 280px;
+        }
+
+        .sidebar .header {
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar .header img {
+            width: 42px;
+            border-radius: 50%;
+        }
+
+
+        .sidebar .header h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--cor-branco);
+            margin: 0 0 0 23px;
+        }
+
+        .sidebar-links {
+            list-style: none;
+            margin: 20px 0 0 0;
+            height: 80%;
+            overflow-y: auto;
+            scrollbar-width: none;
+        }
+
+        .sidebar-links h4 span {
+            opacity: 0;
+        }
+
+        .sidebar:hover .sidebar-links h4 span {
+            opacity: 1;
+        }
+
+        .sidebar-links h4 {
+            color: var(--cor-branco);
+            white-space: nowrap;
+            font-weight: 600;
+            margin: 10px;
+        }
+
+        .sidebar-links .separator {
+            margin: 0 0 5px 0;
+            width: 100%;
+            height: 1px;
+            transform: scaleX(1);
+            background-color: var(--cor-azul);
+            transform: translateY(-50%);
+            transform-origin: right;
+            transition-duration: 0.2s;
+        }
+
+        .sidebar:hover .sidebar-links .separator {
+            transition-delay: 0s;
+            transform: scaleX(0);
+        }
+
+        .sidebar-links li a {
+            display: flex;
+            align-items: center;
+            gap: 0 20px;
+            padding: 15px 10px;
+            white-space: nowrap;
+            color: var(--cor-cinza);
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 1.5s ease, background 1s ease;
+            transition: 1;
+        }
+
+        .sidebar-links li a:hover {
+            background-color: var(--cor-cinzaTransp);
+            color: var(--cor-branco);
+            border-radius: 15px;
+        }
+
+        .user-account {
+            margin: 10px 0 0 0;
+            padding: 12px 10px;
+        }
+
+        .user-account .user-profile {
+            display: flex;
+            align-items: center;
+            color: var(--cor-branco);
+        }
+
+        .user-account .user-profile img {
+            width: 42px;
+            margin: 0 23px 0 0;
+            border-radius: 50px;
+        }
+
+        .user-account .user-profile h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .user-account .user-profile span {
+            font-size: 0.775rem;
+            font-weight: 500;
+
+        }
+
+        .sidebar:hover .user-account {
+            background-color: var(--cor-cinzaTransp);
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <header class="header">
+            <img src="/img/logo.png" alt="">
+            <h2>CodingLab</h2>
+        </header>
+        <ul class="sidebar-links">
+            <h4>
+                <span>Menu Principal</span>
+            </h4>
+            <div class="separator"></div>
+            <li><a href="#">
+                    <span class="material-symbols-outlined">dashboard</span>Dashboard
+                </a>
+            </li>
+
+            <li><a href="#">
+                    <span class="material-symbols-outlined">overview</span>Visão Geral
+                </a>
+            </li>
+
+            <li><a href="#">
+                    <span class="material-symbols-outlined">monitoring</span>Analise
+                </a>
+            </li>
+
+            <h4>
+                <span>Geral</span>
+            </h4>
+            <div class="separator"></div>
+
+            <li><a href="#">
+                    <span class="material-symbols-outlined">folder</span>Projetos
+                </a>
+            </li>
+
+            <li><a href="#">
+                    <span class="material-symbols-outlined">groups</span>Grupos
+                </a>
+            </li>
+
+            <li><a href="#">
+                    <span class="material-symbols-outlined">move_up</span>Transferência
+                </a>
+            </li>
+
+            <li><a href="#">
+                    <span class="material-symbols-outlined">flag</span>Relatórios
+                </a>
+            </li>
+
+            <li><a href="#">
+                    <span class="material-symbols-outlined">notifications_active</span>Notificações
+                </a>
+            </li>
+
+            <h4>
+                <span>Conta</span>
+            </h4>
+            <div class="separator"></div>
+            <li><a href="#">
+                    <span class="material-symbols-outlined">account_circle</span>Perfil
+                </a>
+            </li>
+
+            <li><a href="#">
+                    <span class="material-symbols-outlined">settings</span>Configurações
+                </a>
+            </li>
+
+            <li><a href="#">
+                    <span class="material-symbols-outlined">logout</span>Sair
+                </a>
+            </li>
+        </ul>
+        <div class="user-account">
+            <div class="user-profile">
+                <img src="/img/profile-img.jpg" alt="">
+                <div class="details">
+                    <h3>Fulano</h3>
+                    <span>Desenvolvedor de Software</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+</body>
+
+</html>
