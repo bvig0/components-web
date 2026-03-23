@@ -2,12 +2,13 @@
 
 /* Variaveis */
 :root {
+    --cor-branco: #fff;
     --cor-azulPrincipal: #1671da;
     --cor-azulEscuro: #05182c;
 }
 
 body {
-    background-image: url('../img/fundo.jpg');
+    background-image: url('../img/login_fundo.jpg');
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-size: cover;
@@ -97,7 +98,7 @@ body {
 .form form .button {
     border-radius: 10px;
     background-color: var(--cor-azulPrincipal);
-    color: #fff;
+    color: var(--cor-branco);
     font-size: 1.2rem;
     font-weight: 700;
     margin: 10px 0;
@@ -107,6 +108,7 @@ body {
 }
 
 .form form .button:hover {
+    color: var(--cor-branco);
     background-color: var(--cor-azulEscuro);
     transform: scale(1.05);
 }
