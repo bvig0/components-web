@@ -51,4 +51,4 @@ Este projeto está sob a licença MIT. Sinta-se à vontade para usar, modificar 
 
 ---
 
-Desenvolvido com ☕ por **bvig0**
+Desenvolvido por **bvig0**
