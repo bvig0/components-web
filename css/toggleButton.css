@@ -1,0 +1,48 @@
+@import url('config.css');
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.btnToggle {
+    position: relative;
+    height: 155px;
+    width: 300px;
+    background-color: #ddd;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btnToggle.active {
+    background-color: #7d2ae8;
+}
+
+.btnToggle .icon {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: 800;
+    color: #999;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #000000;
+    transition: all 0.5s ease;
+
+}
+
+.btnToggle.active .icon {
+    color: #7d2ae8;
+    left: calc(100% - 120px - 20px);
+}

@@ -11,57 +11,8 @@
     <meta name="robots" content="index, index">
     <meta name="keywords" content="Toggle button, Botão de alternância">
     <title>Toogle Button</title>
-    <link rel="stylesheet" href="../css/config.css">
+    <link rel="stylesheet" href="../css/toggleButton.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-    <style>
-        body {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #fff;
-        }
-
-        .btnToggle {
-            position: relative;
-            height: 155px;
-            width: 300px;
-            background-color: #ddd;
-            border-radius: 100px;
-            cursor: pointer;
-            transition: all 0.5s ease;
-        }
-
-        .btnToggle.active {
-            background-color: #7d2ae8;
-        }
-
-        .btnToggle .icon {
-            position: absolute;
-            height: 120px;
-            width: 120px;
-            top: 50%;
-            left: 20px;
-            transform: translateY(-50%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 70px;
-            font-weight: 800;
-            color: #999;
-            background-color: #fff;
-            border-radius: 50%;
-            box-shadow: 0 0 6px #000000;
-            transition: all 0.5s ease;
-
-        }
-
-        .btnToggle.active .icon {
-            color: #7d2ae8;
-            left: calc(100% - 120px - 20px);
-        }
-    </style>
 </head>
 
 <body>
@@ -71,19 +22,7 @@
         </div>
     </div>
 
-    <script>
-        const btnToggle = document.querySelector(".btnToggle");
-        const lockIcon = document.querySelector(".icon i");
-
-        btnToggle.addEventListener("click", () => {
-            btnToggle.classList.toggle("active");
-
-            if (btnToggle.classList.contains("active")) {
-                return lockIcon.classList.replace("bi-unlock-fill", "bi-lock-fill");
-            }
-            lockIcon.classList.replace("bi-lock-fill", "bi-unlock-fill");
-        })
-    </script>
+    <script src="../js/toggleButton.js"></script>
 </body>
 
 </html>

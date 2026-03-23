@@ -1,0 +1,19 @@
+@import url('config.css');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 100px;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #dfdfdf;
+    margin: 20px;
+}

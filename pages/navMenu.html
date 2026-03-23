@@ -12,58 +12,7 @@
     <meta name="robots" content="index, index">
     <meta name="keywords" content="Menu de navegação, cabeçalho">
     <title>Menu de Navegação</title>
-    <link rel="stylesheet" href="../css/config.css">
-
-
-    <style>
-        /* Variaveis */
-        :root {
-            --cor-principal: #2192ff;
-        }
-
-        /* Conteudo principal */
-        .container {
-            height: 100vh;
-            width: 100vw;
-            background-color: var(--cor-principal);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .container nav {
-            background-color: #fff;
-            border-radius: 9px;
-            padding: 30px;
-            box-shadow: 0 5px 20px #000000;
-        }
-
-        .container nav ul li {
-            display: inline-block;
-            list-style: none;
-            font-size: 2rem;
-            padding: 0 10px;
-            margin: 0 20px;
-            cursor: pointer;
-            position: relative;
-        }
-
-        .container nav ul li::after {
-            content: '';
-            width: 0;
-            height: 3px;
-            background-color: var(--cor-principal);
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            transition: 1s;
-        }
-
-        .container nav ul li:hover::after {
-            width: 100%;
-
-        }
-    </style>
+    <link rel="stylesheet" href="../css/navMenu.css">
 </head>
 
 <body>
