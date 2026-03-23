@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="X-UA-Compatible" content="ie=7">
+    <meta name="description" content="Projeto de página unica de formulário">
+    <meta name="author" content="Brian Vigo de Oliveira">
+    <meta name="robots" content="index, index">
+    <meta name="keywords" content="Formulario, registro de formulario">
+    <title>Forms</title>
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="shortcut icon" href="../img/formElogin_icone" type="image/x-icon">
+</head>
+
+<body>
+    <section class="container">
+        <header>Formulário de Inscrição</header>
+        <form action="#" class="form">
+            <div class="input-box">
+                <label for="#">Nome Completo</label>
+                <input type="text" placeholder="Digite o seu nome completo" required>
+            </div>
+
+            <div class="input-box">
+                <label for="#">E-mail</label>
+                <input type="email" placeholder="exemplo123@email.com" required>
+            </div>
+
+            <section class="column">
+                <div class="input-box">
+                    <label for="#">Número de Telefone</label>
+                    <input type="text" placeholder="+55 (11) 98765-4321" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="#">Data de Nascimento</label>
+                    <input type="date" placeholder="Digite seu nome completo" required>
+                </div>
+            </section>
+
+            <section class="gender-box">
+                <h3>Gênero</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender">
+                        <label for="check-male">Homem</label>
+                    </div>
+
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender">
+                        <label for="check-female">Mulher</label>
+                    </div>
+
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender">
+                        <label for="check-other">Outro</label>
+                    </div>
+                </div>
+            </section>
+
+            <div class="input-box addres">
+                <label for="#">Endereço</label>
+
+                <div class="column">
+                    <input type="text" placeholder="CEP" required>
+                    <input type="text" placeholder="Digite o seu endereço" required>
+                </div>
+
+                <div class="column">
+                    <input type="number" placeholder="Número" required>
+                    <input type="text" placeholder="Complemento (opcional)" required>
+                </div>
+
+                <div class="column">
+                    <input type="text" placeholder="Cidade" required>
+
+                    <div class="select-box">
+                        <select>
+                            <option value="">Estado (UF)</option>
+                            <option value="">Acre (AC)</option>
+                            <option value="">Alagoas (AL)</option>
+                            <option value="">Amapá (AP)</option>
+                            <option value="">Amazonas (AM)</option>
+                            <option value="">Bahia (BA)</option>
+                            <option value="">Ceará (CE)</option>
+                            <option value="">Distrito Federal (DF)</option>
+                            <option value="">Espírito Santo (ES)</option>
+                            <option value="">Goiás (GO)</option>
+                            <option value="">Maranhão (MA)</option>
+                            <option value="">Mato Grosso (MT)</option>
+                            <option value="">Minas Gerais (MG)</option>
+                            <option value="">Pará (PA)</option>
+                            <option value="">Paraíba (PB)</option>
+                            <option value="">Paraná (PR)</option>
+                            <option value="">Pernambuco (PE)</option>
+                            <option value="">Piauí (PI)</option>
+                            <option value="">Rio de Janeiro (RJ)</option>
+                            <option value="">Rio Grande do Norte (RN)</option>
+                            <option value="">Rio Grande do Sul (RS)</option>
+                            <option value="">Rondônia (RO)</option>
+                            <option value="">Roraima (RR)</option>
+                            <option value="">Santa Catarina (SC)</option>
+                            <option value="">São Paulo (SP)</option>
+                            <option value="">Sergipe (SE)</option>
+                            <option value="">Tocantins (TO)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <button>Enviar</button>
+        </form>
+    </section>
+</body>
+
+
+</html>
