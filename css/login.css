@@ -1,0 +1,139 @@
+@import url("config.css");
+
+/* Variaveis */
+:root {
+    --cor-azulPrincipal: #1671da;
+    --cor-azulEscuro: #05182c;
+}
+
+body {
+    background-image: url('../img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    position: absolute;
+
+    max-width: 430px;
+    width: 100%;
+    background-color: #ffffffb7;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #000;
+}
+
+.container .signUp {
+    display: none;
+}
+
+#check:checked~.signUp {
+    display: block;
+}
+
+#check:checked~.login {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.container .form {
+    padding: 2rem;
+}
+
+.form header {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form form label {
+    margin: 0px 0px 0px 10px;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.form form input {
+    height: 60px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 17px;
+    margin-bottom: 1.3rem;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    outline: none;
+}
+
+.form form input:focus {
+    color: var(--cor-azulPrincipal);
+    box-shadow: 0 1px 0 var(--cor-azulEscuro);
+    border: 1px solid var(--cor-azulPrincipal);
+}
+
+.form form input:focus::placeholder {
+    color: var(--cor-azulPrincipal);
+}
+
+.form form a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cor-azulPrincipal);
+    text-decoration: none;
+    padding: 0 0 0 10px;
+}
+
+.form form a:hover {
+    text-decoration: underline;
+}
+
+.form form .button {
+    border-radius: 10px;
+    background-color: var(--cor-azulPrincipal);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    transition: 1s;
+}
+
+.form form .button:hover {
+    background-color: var(--cor-azulEscuro);
+    transform: scale(1.05);
+}
+
+.registration {
+    font-size: 17px;
+    text-align: center;
+}
+
+.registration label {
+    color: var(--cor-azulPrincipal);
+    cursor: pointer;
+}
+
+.registration label:hover {
+    text-decoration: underline;
+}
+/* RESPONSIVIDADE */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 85%;
+        margin: 25px;
+    }
+}
+
+@media (min-width: 769px) and (max-width:1024) {
+    img {
+        height: 100vh;
+    }
+}

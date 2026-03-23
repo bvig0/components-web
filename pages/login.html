@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="X-UA-Compatible" content="ie=7">
+    <meta name="description" content="Projeto de página unica de login">
+    <meta name="author" content="Brian Vigo de Oliveira">
+    <meta name="robots" content="index, index">
+    <meta name="keywords" content="Login, registro de formulario, cadastrar">
+    <title>Formulário de Login</title>
+    <link rel="shortcut icon" href="../img/formElogin_icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/login.css">
+
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="check">
+
+        <section class="login form">
+            <header>
+                <p>Login</p>
+            </header>
+            <form action="#">
+                <label for="loginEmail">E-mail</label>
+                <input type="email" id="loginEmail" name="loginEmail" placeholder="Digite o seu E-mail">
+
+                <label for="loginSenha">Senha</label>
+                <input type="password" id="loginSenha" name="loginSenha" placeholder="Digite a sua Senha">
+
+                <a href="#">Esqueceu sua senha?</a>
+
+                <input type="button" class="button" value="Entrar">
+            </form>
+            <div class="registration">
+                <span class="registration"> Não tem uma conta?
+                    <label for="check">Cadastrar-se</label>
+                </span>
+            </div>
+        </section>
+
+        <section class="signUp form">
+            <header>
+                <p>Cadastrar-se</p>
+            </header>
+            <form action="#">
+                <label for="cadastroNome">Nome</label>
+                <input type="email" id="cadastroNome" name="cadastroNome" placeholder="Digite o seu E-mail">
+
+                <label for="cadastroEmail">E-mail</label>
+                <input type="email" id="cadastroEmail" name="cadastroEmail" placeholder="Digite o seu E-mail">
+
+                <label for="cadastroCriarSenha">Senha</label>
+                <input type="password" id="cadastroCriarSenha" name="cadastroCriarSenha" placeholder="Crie a sua Senha">
+
+                <label for="cadastroConfirmarSenha">Confirmar senha</label>
+                <input type="password" id="cadastroConfirmarSenha" name="cadastroConfirmarSenha" placeholder="Confirme a sua Senha">
+
+                <input type="button" class="button" value="Cadastrar-se">
+            </form>
+            <div class="registration">
+                <span class="registration"> Você tem uma conta?
+                    <label for="check">Entrar</label>
+                </span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
