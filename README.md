@@ -1,6 +1,6 @@
 # 🌐 Components Web
 
-Uma biblioteca prática e leve de componentes front-end desenvolvidos exclusivamente com tecnologias nativas (**HTML5, CSS3 e JavaScript**). O foco é oferecer uma coleção de elementos de UI prontos para uso: visualize, copie o código e aplique no seu projeto.
+Um repositório simples e leve de componentes front-end desenvolvidos exclusivamente com tecnologias nativas (**HTML5, CSS3 e JavaScript**). O foco é oferecer uma coleção de elementos de UI prontos para uso: visualize, copie o código e aplique no seu projeto.
 
 ---
 
